@@ -1,0 +1,39 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PARVAZ",
+      "hasCanvas": true,
+      "bodyTextLen": 2282,
+      "bodyTextHash": "eb26a945ddd53cec50cc913208ca9c75515b7a3b8ac8c8aa428f2f2f550566d2",
+      "bodyTextPrefix": "پرش به محتوا PARVAZ صفحه اصلی پروژه‌ها پروتکل سرمایه‌گذاری مشاور",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PARVAZ",
+      "hasCanvas": true,
+      "bodyTextLen": 2220,
+      "bodyTextHash": "63aec2fb1e9abe7e95ed58ce60d0a0835ada220119a4fa872aa899999feaa25f",
+      "bodyTextPrefix": "پرش به محتوا PARVAZ EN FOUNDER & VENTURE STUDIO PARVAZ بساز. تحل",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND WARNING: this looks like a game/canvas app but src/lib/og/site.json is missing \"type\": \"x:game\". X uses og:type=x:game to present the unfurl as a game card — set it in /workspace/src/lib/og/site.json per /workspace/.grok/skills/og/SKILL.md. Do not invent x:type or overload twitter:card as the game signal.",
+    "BRAND WARNING: this looks like a game/canvas app but /workspace/public/x-banner.jpg is missing. Games need a 50:11 X feed card (1200×264 JPEG) at public/x-banner.jpg — open /workspace/.grok/skills/og/SKILL.md and finish the brand-asset pass."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
