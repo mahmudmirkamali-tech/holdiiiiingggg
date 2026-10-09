@@ -13,6 +13,7 @@ const links = [
   { to: "/", key: "home" as const },
   { to: "/projects", key: "projects" as const },
   { to: "/protocol", key: "protocol" as const },
+  { to: "/economy", key: "economy" as const },
   { to: "/invest", key: "invest" as const },
   { to: "/advisory", key: "advisory" as const },
   { to: "/founder", key: "founder" as const },

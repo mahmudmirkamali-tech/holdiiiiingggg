@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PARVAZ",
+      "hasCanvas": true,
+      "bodyTextLen": 2554,
+      "bodyTextHash": "e57212c433d562bbf23a66a193f75ee697f3eea0fee7ad1b9c00d256e3c7626f",
+      "bodyTextPrefix": "پرش به محتوا PARVAZ پروژه‌ها پروتکل اقتصاد سرمایه‌گذاری مشاوره ب",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PARVAZ",
+      "hasCanvas": true,
+      "bodyTextLen": 2495,
+      "bodyTextHash": "15049bd4e56d1f6df2729692c7709020ff53e4bbace1395e7b8e5ca6d6455ad6",
+      "bodyTextPrefix": "پرش به محتوا PARVAZ EN FOUNDER & VENTURE STUDIO PARVAZ بساز. تحل",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

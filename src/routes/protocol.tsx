@@ -84,6 +84,9 @@ function ProtocolPage() {
           <Link to="/invest">{t.protocol.ctaInvest}</Link>
         </Button>
         <Button asChild variant="secondary">
+          <Link to="/economy">{t.nav.economy}</Link>
+        </Button>
+        <Button asChild variant="secondary">
           <Link to="/contact">{t.protocol.ctaContact}</Link>
         </Button>
       </div>

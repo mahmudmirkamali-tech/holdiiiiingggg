@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/economy",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "PARVAZ",
+      "hasCanvas": false,
+      "bodyTextLen": 1885,
+      "bodyTextHash": "e1fbe1dcd9713be1b039eee9d05dcfd059256c7455475199f83d9929020a0a12",
+      "bodyTextPrefix": "پرش به محتوا PARVAZ پروژه‌ها پروتکل اقتصاد سرمایه‌گذاری مشاوره ب",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/economy-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "PARVAZ",
+      "hasCanvas": false,
+      "bodyTextLen": 1826,
+      "bodyTextHash": "18228bfd956f3fc6c0994b4f8f86f526b31b624b8a95d1dea51fad24bdcc83ff",
+      "bodyTextPrefix": "پرش به محتوا PARVAZ EN ECONOMY اقتصاد پارواز، آمادهٔ عرضه PRVZ خ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/economy-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/economy-preview.json"
+}

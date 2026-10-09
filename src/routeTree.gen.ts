@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdvisoryRouteImport } from './routes/advisory'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as EconomyRouteImport } from './routes/economy'
 import { Route as FounderRouteImport } from './routes/founder'
 import { Route as InvestRouteImport } from './routes/invest'
 import { Route as ProjectsRouteImport } from './routes/projects'
@@ -30,6 +31,11 @@ const AdvisoryRoute = AdvisoryRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EconomyRoute = EconomyRouteImport.update({
+  id: '/economy',
+  path: '/economy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FounderRoute = FounderRouteImport.update({
@@ -57,6 +63,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/advisory': typeof AdvisoryRoute
   '/contact': typeof ContactRoute
+  '/economy': typeof EconomyRoute
   '/founder': typeof FounderRoute
   '/invest': typeof InvestRoute
   '/projects': typeof ProjectsRoute
@@ -66,6 +73,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/advisory': typeof AdvisoryRoute
   '/contact': typeof ContactRoute
+  '/economy': typeof EconomyRoute
   '/founder': typeof FounderRoute
   '/invest': typeof InvestRoute
   '/projects': typeof ProjectsRoute
@@ -76,6 +84,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/advisory': typeof AdvisoryRoute
   '/contact': typeof ContactRoute
+  '/economy': typeof EconomyRoute
   '/founder': typeof FounderRoute
   '/invest': typeof InvestRoute
   '/projects': typeof ProjectsRoute
@@ -87,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/advisory'
     | '/contact'
+    | '/economy'
     | '/founder'
     | '/invest'
     | '/projects'
@@ -96,6 +106,7 @@ export interface FileRouteTypes {
     | '/'
     | '/advisory'
     | '/contact'
+    | '/economy'
     | '/founder'
     | '/invest'
     | '/projects'
@@ -105,6 +116,7 @@ export interface FileRouteTypes {
     | '/'
     | '/advisory'
     | '/contact'
+    | '/economy'
     | '/founder'
     | '/invest'
     | '/projects'
@@ -115,6 +127,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdvisoryRoute: typeof AdvisoryRoute
   ContactRoute: typeof ContactRoute
+  EconomyRoute: typeof EconomyRoute
   FounderRoute: typeof FounderRoute
   InvestRoute: typeof InvestRoute
   ProjectsRoute: typeof ProjectsRoute
@@ -142,6 +155,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/economy': {
+      id: '/economy'
+      path: '/economy'
+      fullPath: '/economy'
+      preLoaderRoute: typeof EconomyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/founder': {
@@ -179,6 +199,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdvisoryRoute: AdvisoryRoute,
   ContactRoute: ContactRoute,
+  EconomyRoute: EconomyRoute,
   FounderRoute: FounderRoute,
   InvestRoute: InvestRoute,
   ProjectsRoute: ProjectsRoute,

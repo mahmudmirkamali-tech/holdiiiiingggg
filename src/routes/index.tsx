@@ -46,6 +46,9 @@ function Home() {
                 <Link to="/invest">{t.hero.ctaInvest}</Link>
               </Button>
               <Button asChild variant="secondary">
+                <Link to="/economy">{t.hero.ctaEconomy}</Link>
+              </Button>
+              <Button asChild variant="secondary">
                 <Link to="/contact">{t.hero.ctaWork}</Link>
               </Button>
             </div>
@@ -119,6 +122,32 @@ function Home() {
               </Link>
             </Button>
           </div>
+        </Page>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <Page>
+          <Reveal>
+            <SectionHeader
+              eyebrow={t.home.economyEyebrow}
+              title={t.home.economyTitle}
+              body={t.home.economyBody}
+            />
+          </Reveal>
+          <Reveal>
+            <div className="flex flex-col items-start justify-between gap-6 rounded-2xl bg-surface p-8 shadow-[var(--shadow-border)] md:flex-row md:items-center md:p-10">
+              <div className="max-w-xl">
+                <p className="font-display text-2xl tracking-tight">PRVZ</p>
+                <p className="mt-2 text-sm text-muted">{t.economy.body}</p>
+              </div>
+              <Button asChild>
+                <Link to="/economy">
+                  {t.home.economyAll}
+                  <Arrow className="size-4" />
+                </Link>
+              </Button>
+            </div>
+          </Reveal>
         </Page>
       </section>
 
